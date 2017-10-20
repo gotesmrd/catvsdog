@@ -8,3 +8,5 @@ Convolutional Neural Network trained on 8000 images of cats and dogs to distingu
 Achieves training and testing set accuracy of 90%+
 
 Implemented with Keras
+
+Data can be found: https://www.superdatascience.com/machine-learning/ @ Section 40
