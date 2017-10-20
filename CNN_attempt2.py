@@ -8,18 +8,18 @@ from keras.layers import Dense
 CNN = Sequential()
 
 
-CNN.add(Convolution2D(32, kernel_size=(7,7),input_shape=(128, 128 ,3), activation='relu'))
+CNN.add(Convolution2D(32, kernel_size=(5,5),input_shape=(128, 128 ,3), activation='relu'))
 # should u consider making the pooling overlapping like in ConvNet, kernel 3x3, step-size=2
 CNN.add(MaxPooling2D(pool_size=(2,2)))
 
 # 2nd layer
-CNN.add(Convolution2D(32, kernel_size=(7,7), activation='relu'))
+CNN.add(Convolution2D(32, kernel_size=(5,5), activation='relu'))
 # should u consider making the pooling overlapping like in ConvNet, kernel 3x3, step-size=2
 # maybe try getting rid of this layer bc with it you only put around 8 units into the network...without it around 16 which is more info
 CNN.add(MaxPooling2D(pool_size=(2,2) ))
 
 #3rd layer
-CNN.add(Convolution2D(32, kernel_size=(7,7), activation='relu'))
+CNN.add(Convolution2D(32, kernel_size=(5,5), activation='relu'))
 # should u consider making the pooling overlapping like in ConvNet, kernel 3x3, step-size=2
 CNN.add(MaxPooling2D(pool_size=(2,2) ))
 
